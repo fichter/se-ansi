@@ -1,0 +1,31 @@
+// se-ansi by Rene Fichter
+xkb_symbols "se-ansi" {
+    include "us(basic)"
+
+    name[Group1]="Swedish (ANSI)";
+
+    key <TLDE> { [ grave, asciitilde, section, onehalf ] };
+    key <AE02> { [ 2, at, quotedbl ] };
+    key <AE03> { [ 3, numbersign, sterling ] };
+    key <AE04> { [ 4, dollar, currency ] };
+    key <AE05> { [ 5, percent, EuroSign ] };
+    key <AE06> { [ 6, asciicircum, dead_circumflex ] };
+    key <AE09> { [ 9, parenleft, braceleft, bracketleft ] };
+    key <AE10> { [ 0, parenright, braceright, bracketright ] };
+    key <AE11> { [ minus, underscore, dead_diaeresis, dead_tilde ] };
+    key <AE12> { [ equal, plus, dead_acute, dead_grave ] };
+
+    key <AD03> { [ e, E, EuroSign, cent ] };
+    key <AD11> { [ aring, Aring, bracketleft, braceleft ] };
+    key <AD12> { [ apostrophe, quotedbl, bracketright, braceright ] };
+
+    key <AC10> { [ adiaeresis, Adiaeresis, semicolon, colon ] };
+    key <AC11> { [ odiaeresis, Odiaeresis, apostrophe, quotedbl ] };
+
+    key <AB07> { [ m, M, mu ] };
+    key <AB08> { [ comma, less, semicolon ] };
+    key <AB09> { [ period, greater, colon ] };
+
+    include "kpdl(comma)"
+    include "level3(ralt_switch)"
+};
