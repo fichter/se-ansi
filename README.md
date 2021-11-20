@@ -13,10 +13,11 @@ Open `windows/se-ansi.klc` in [Microsoft Keyboard Layout Creator 1.4 (MSKLC)](ht
 Select `Project`, `Build DLL and Setup Package`. This generates a setup program that can then be installed on any Windows system.
 
 ## Linux (XKB)
-Tested on Ubuntu 21.10.
 
 ### User-specific (non-root)
-Copy `linux/se-ansi` to a directory named `symbols`, for example `$HOME/.xkb/symbols/se-ansi`. Then create an autostart file `$HOME/.config/autostart/xkb-se-ansi.desktop` with the following content.
+*Does not work with Wayland*
+
+Copy `linux/se-ansi` to a directory named `symbols`, for example `$HOME/.xkb/symbols`. Then create an autostart file `$HOME/.config/autostart/xkb-se-ansi.desktop` with the following content.
 ```
 [Desktop Entry]
 Encoding=UTF-8
@@ -25,6 +26,8 @@ Name=se-ansi keyboard layout
 Exec=bash -c 'setxkbmap se-ansi -option "" -print | xkbcomp -I"$HOME/.xkb" - $DISPLAY'
 ```
 ### System-wide (root)
+*Tested on Ubuntu 21.10*
+
 Add the contents of `linux/se-ansi` to the end of the file `/usr/share/X11/xkb/symbols/se`. Then find the following section in `/usr/share/X11/xkb/rules/evdev.xml`:
 ```xml
 <layout>
