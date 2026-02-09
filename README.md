@@ -6,6 +6,11 @@ All symbols from the Swedish layout are retained, including the dead keys, howev
 
 ![se-ansi keyboard layout](keyboard-layout.png)
 
+# Download
+Download the latest release:
+
+[![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/fichter/se-ansi/latest/total?style=flat-square)](https://github.com/fichter/se-ansi/releases/latest)
+
 # Building and installing
 ## Windows
 Open `windows/se-ansi.klc` in [Microsoft Keyboard Layout Creator 1.4 (MSKLC)](https://www.microsoft.com/en-us/download/details.aspx?id=102134).
@@ -58,3 +63,4 @@ sudo dpkg-reconfigure xkb-data
 # License
 
 Licensed under MIT.
+
